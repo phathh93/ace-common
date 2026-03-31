@@ -40,7 +40,6 @@ public final class AceConst {
     public static final String SERVICE_WELCOME_BONUS = "SERVICE_WELCOME_BONUS";
     public static final String SERVICE_TOP_PLAYER_REWARD = "SERVICE_TOP_PLAYER_REWARD";
     public static final String SERVICE_SAFETY_NET = "SERVICE_SAFETY_NET";
-    public static final String SERVICE_DAILY_LOGIN = "SERVICE_DAILY_LOGIN";
     // USER DEFAULT
 
     public static final String DEFAULT_AGENT = "ACEPOKER";
@@ -107,8 +106,6 @@ public final class AceConst {
     public static final String ROUTE_REST_REWARD = "/api/rewards";
 
     public static final String ROUTE_REST_SAFETY_NET = "/api/safety-net";
-
-    public static final String ROUTE_REST_DAILY_LOGIN = ROUTE_REST + "/daily-login";
 
     public static final String ROUTE_REST_FRIENDS = "/api/friends";
 
