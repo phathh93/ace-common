@@ -277,7 +277,12 @@ public enum AceStatusCode {
 
     // Safety Net
     SAFETY_NET_NOT_ELIGIBLE(110001, HttpStatus.BAD_REQUEST),
-    SAFETY_NET_LIMIT_REACHED(110002, HttpStatus.BAD_REQUEST);
+    SAFETY_NET_LIMIT_REACHED(110002, HttpStatus.BAD_REQUEST),
+
+    // Daily Login
+    DAILY_LOGIN_ALREADY_CLAIMED(120001, HttpStatus.BAD_REQUEST),
+    DAILY_LOGIN_CYCLE_COMPLETED(120002, HttpStatus.BAD_REQUEST),
+    DAILY_LOGIN_CONFIG_NOT_FOUND(120003, HttpStatus.NOT_FOUND);
 
     // region Implementation
     private final int value;
