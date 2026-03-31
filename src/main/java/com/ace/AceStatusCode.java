@@ -273,7 +273,11 @@ public enum AceStatusCode {
     GIFT_ALREADY_CLAIMED(100009, HttpStatus.BAD_REQUEST),
     GIFT_ALREADY_SENT_TODAY(100010, HttpStatus.BAD_REQUEST),
     NOT_FRIENDS(100011, HttpStatus.BAD_REQUEST),
-    RECEIVER_FRIEND_LIST_FULL(100012, HttpStatus.BAD_REQUEST);
+    RECEIVER_FRIEND_LIST_FULL(100012, HttpStatus.BAD_REQUEST),
+
+    // Safety Net
+    SAFETY_NET_NOT_ELIGIBLE(110001, HttpStatus.BAD_REQUEST),
+    SAFETY_NET_LIMIT_REACHED(110002, HttpStatus.BAD_REQUEST);
 
     // region Implementation
     private final int value;
