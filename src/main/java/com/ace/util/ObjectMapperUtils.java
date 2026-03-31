@@ -21,6 +21,7 @@ public class ObjectMapperUtils {
 
     static {
         objectMapper = new ObjectMapper();
+        objectMapper.findAndRegisterModules();
         objectMapper.enable(DeserializationFeature.READ_UNKNOWN_ENUM_VALUES_USING_DEFAULT_VALUE);
         objectMapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
         objectMapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
